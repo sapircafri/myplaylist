@@ -1,0 +1,24 @@
+.header{
+
+    height: 110px;
+background-color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+   
+}
+#img{
+    height: 100px;
+  
+    
+}
+#inputSong{
+    width: 300px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 30px;
+    
+}
+/* #searchSong{
+bo
+} */

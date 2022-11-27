@@ -1,0 +1,14 @@
+#aa{
+    height: 100px;
+    width: 100px;
+}
+.song{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+.songDetails{
+    color:white
+}
