@@ -4,6 +4,8 @@ import Main from "../Main/Main";
 import axios from "axios";
 import { Route, Routes } from "react-router-dom";
 import SearchPage from "../../pages/SearchPage/SearchPage";
+import Side from "../Side/Side";
+import './Layout.css'
 
 
 
@@ -29,6 +31,7 @@ function Layout() {
   const[search,setSearch]=useState("חנן בן ארי")
   const searchSong = (value) => {
     setSearch(value)
+    console.log(value);
   }
 
   useEffect(() => {
@@ -59,13 +62,14 @@ function Layout() {
   return (
     <div className="App-layout">
        <Header searchSong={searchSong}/>
-
+       <div className="side_main">
+      <Side/>
        <Routes>
-          <Route path="/" element={<Main songs={songs}/>}/>
+          <Route path="/spotify" element={<Main songs={songs}/>}/>
           <Route path="/search" element={<SearchPage songs={songs}/>}/>
-
+          
         </Routes>
-       
+        </div> 
     </div>
   );
 }

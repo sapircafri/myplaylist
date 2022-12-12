@@ -3,18 +3,26 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Layout from "./components/Layout/Layout"
 import LoginPage from './pages/LoginPage/LoginPage';
-import users from "./Usersfct";
+import RegisterPage from './pages/RegisterPage/RegisterPage';
 
-const usersContext = createContext()
+export const usersContext = createContext()
 
 function App() {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState({});
+  const [log,setLog] = useState(false)
+
   return (
     <div className="App">
       <usersContext.Provider value={{user, setUser}}>
         <Routes>
-          <Route path='/LoginPage' element={<LoginPage />} />
+          <Route path='/' element={<LoginPage setLog={setLog} />} />
+          <Route path='/RegisterPage' element={<RegisterPage setLog={setLog} />} />
+
+         {log && <>
           <Route path='*' element={<Layout />} />
+          </>
+         }
+        
         </Routes>
       </usersContext.Provider>
 

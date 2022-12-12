@@ -1,7 +1,10 @@
 .header{
 
     height: 110px;
-background-color: black;
+/* background-color: black; */
+background: linear-gradient(transparent, rgba(1, 1, 1, 1));
+background-color: rgb(80, 77, 93);
+
     display: flex;
     justify-content: left;
     align-items: center;
@@ -13,12 +16,32 @@ background-color: black;
     
 }
 #inputSong{
-    width: 300px;
+
+    width: 250px;
     height: 30px;
     margin: 20px;
-    border-radius: 30px;
-    
+    border-radius: 20px;
+    border: solid 1px rgb(144, 141, 154);
+    background-color: rgb(80, 77, 93);
+    color: azure;
+    outline: none;
 }
-/* #searchSong{
-bo
-} */
+
+.ee{
+    position: relative;
+}
+#searchSong{
+    position: absolute;
+    top: 30%;
+    right: 7%;
+    border-radius: 20px;
+    height: 30px;
+    /* border: solid 2px rgb(144, 141, 154); */
+    background-color: rgb(80, 77, 93);
+    color:azure;
+}
+
+#hello{
+    color:white
+
+}

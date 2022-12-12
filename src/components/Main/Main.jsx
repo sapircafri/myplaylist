@@ -9,7 +9,7 @@ function Main(props) {
         
 
           {props.songs.map((v)=>
-            <Song img={v.channel.icon} name={v.title} time={v.time} />)
+            <Song {...v} />)
           }  
         
            
