@@ -4,7 +4,7 @@ import './Song.css'
 function Song(props) {
     
     return (
-        <div className="song">
+        <div onClick={()=>props.playSong(props.id)} className="song">
             <div id="aa">
             <img className="img" src={props.thumbnail.url} alt="" />
             <div className="time">{props.duration_formatted}</div> 

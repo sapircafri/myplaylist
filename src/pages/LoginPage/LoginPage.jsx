@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 
-function LoginPage({ setLog }) {
+function LoginPage() {
     const [userName, setUserName] = useState(null);
     const [password, setPassword] = useState(null);
     const navigate = useNavigate();
@@ -19,16 +19,17 @@ function LoginPage({ setLog }) {
     const { user, setUser } = useContext(usersContext)
 
     const loginClick = async () => {
-        await axios.post('http://localhost:4000/login', {
-            username:userName ,
+        await axios.post('/login', {
+            email:userName ,
             password: password
           })
           .then(function (response) {
             if(response.data){
-                setUser({ name: userName, password: password })
-                setLog(true)
+            setUser( response.data[0])
+            console.log(response.data[0]);
+                // setLog(true)
                 navigate('/spotify')
-                console.log(user);
+                localStorage.setItem("token",JSON.stringify("Bearer "+response.data[1]))
             }
             console.log(response);
           })

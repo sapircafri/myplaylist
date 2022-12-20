@@ -23,6 +23,11 @@
     align-items: center;
 
 }
+.song:hover{
+  transform: scale(1.1,1.1);
+  transition: 0.3s;
+}
+
 
 .songDetails{
 display: flex;

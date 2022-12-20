@@ -2,7 +2,7 @@
 
     height: 110px;
 /* background-color: black; */
-background: linear-gradient(transparent, rgba(1, 1, 1, 1));
+/* background: linear-gradient(transparent, rgba(1, 1, 1, 1)); */
 background-color: rgb(80, 77, 93);
 
     display: flex;
@@ -11,37 +11,64 @@ background-color: rgb(80, 77, 93);
    
 }
 #img{
-    height: 100px;
-  
+ height: 70px;
+ position: fixed;
+ top: 4%;
+ left: 4.5%;
+    
+}
+#imgp{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.icon{
+    font-size: 35px;
+    color: white;
+    font-family:sans-serif;
+    margin-left: 5.5%;
     
 }
 #inputSong{
 
-    width: 250px;
+    width: 300px;
     height: 30px;
-    margin: 20px;
+    margin: 8%;
+    border:solid 0px;
     border-radius: 20px;
-    border: solid 1px rgb(144, 141, 154);
-    background-color: rgb(80, 77, 93);
-    color: azure;
+    /* border: solid 1px rgb(144, 141, 154); */
+    /* background-color: rgb(80, 77, 93); */
+    color:black;
+    font-family: sans-serif;
     outline: none;
 }
 
 .ee{
+    background-color: white;
     position: relative;
+    display: flex;
+    align-items: center;
+    margin:15%;
+    padding: 0.5%;
+    height:30%;
+    border-radius: 30px;
+
+
 }
-#searchSong{
+#logout{
     position: absolute;
-    top: 30%;
-    right: 7%;
+    top: 9%;
+    right:7%;
     border-radius: 20px;
     height: 30px;
     /* border: solid 2px rgb(144, 141, 154); */
-    background-color: rgb(80, 77, 93);
-    color:azure;
+    background-color: rgb(238, 236, 243);
+    color:black;
 }
 
 #hello{
-    color:white
+    color:white;
+    
 
 }

@@ -1,16 +1,42 @@
-.main{
-    /* background-color: rgb(59, 59, 97); */
-    /* background-image: linear-gradient(rgb(79, 106, 115), rgba(48, 44, 44, 0.97)); */
-    width:85%;
+.main {
+
+    width: 85%;
     height: 100vh;
     background: linear-gradient(transparent, rgba(1, 1, 1, 1));
     background-color: rgb(91, 87, 115);
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    position: relative;
+}
+
+
+.songs-container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(transparent, rgba(1, 1, 1, 1));
+    background-color: rgb(80, 77, 93);
+
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     overflow:auto;
+}
 
-    /* scroll-behavior: smooth; */
+/* .song-play{
+   border: solid 2px red; 
+   width: 100vw;
+   height: 1px;
+} */
+
+.song-playing {
+    /* border: solid 2px red; */
+    background-color: rgb(80, 77, 93);
+
+
+
+    
 }
